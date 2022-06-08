@@ -1,1 +1,3 @@
-console.log('Hello deno!');
+import { serve } from 'https://deno.land/std@0.140.0/http/server.ts';
+
+serve((req: Request) => new Response('Hello deno'));
